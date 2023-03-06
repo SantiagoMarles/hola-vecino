@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolaVecino</title>
+    <link rel="stylesheet" href="./style/estilos.css">
+    <link rel="shortcut icon" href="./multimedia/logo_hola_vecino.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Logo y Botones de menu-->
+    <header class="encabezado">
+        <a href="./index.html">
+            <img class="logo_header" src="./multimedia/logo_hola_vecino.png">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="./html/tu_reserva.html">Tu Reserva</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./html/modulo_pqr.html">Modulo PQR</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./html/registrarse.html">Registrarse</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./html/iniciar_sesion.html">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secciones -->
+    <main>
+
+        <section class="topMasPedidos">
+            <h2>TOP 3 mas solicitados</h2>
+            <div class="sliders">
+                <div class="slider_carne">
+                    <img src="./multimedia/carne.jpg">
+                </div>
+                <div class="slider_hamburguesa">
+                    <img src="./multimedia/hamburguesa.jpg">
+                </div>
+                <div class="slider_postre">
+                    <img src="./multimedia/postre.jpg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion 2 -->
+        <section class="categorias">
+            <h2>Nuestras Categorias</h2>
+            <div class="card_categorias">
+                <div class="card_mejor_calificados">
+                    <img src="./multimedia/ganador.jpg">
+                    <h4>Los mejor calificados</h4>
+                </div>
+                <div class="card_restaurantes">
+                    <img src="./multimedia/restaurante.jpg">
+                    <h4>Restaurantes</h4>
+                </div>
+                <div class="card_bebidas">
+                    <img src="./multimedia/licores.jpg">
+                    <h4>Bares y licores</h4>
+                </div>
+                <div class="card_vinculate">
+                    <img src="./multimedia/vinculate.jpg">
+                    <h4>Vincula tu negocio</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion 3 -->
+        <section>
+            <div class="mapa_mercado">
+                <div class="mapa_mercado_1">
+                    <h3>Restaurante mas cercano a tu ubicacion</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7953.346100847652!2d-74.1601714!3d4.652272399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1675963627514!5m2!1ses!2sco"
+                        width="450" height="460" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mapa_mercado_2">
+                    <h3>Realiza tu mercado con campesinos Colombianos</h3>
+                    <img src="./multimedia/mercado.jpg">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="pie_pagina">
+        <div class="pie_pagina_redes">
+            <h2>Redes Sociales</h2>
+            <a href="https://www.linkedin.com/login/es" target="_blank"><img class="redes"
+                    src="./multimedia/icono_linkedin.png"></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><img class="redes"
+                    src="./multimedia/icono_instagram.png"></a>
+            <a href="https://www.facebook.com/login/" target="_blank"><img class="redes"
+                    src="./multimedia/icono_facebook.png"></a>
+        </div>
+        <div class="pie_pagina_logo">
+            <a href="./index.html">
+                <img class="logo_header" src="./multimedia/logo_hola_vecino.png">
+            </a>
+        </div>
+        <div class="pie_pagina_contacto">
+            <h3>HolaVecino@holavecino.com</h3>
+        </div>
+
+    </footer>
+</body>
+
+</html>

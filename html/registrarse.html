@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="../style/estilos.css">
+    <link rel="shortcut icon" href="../multimedia/logo_hola_vecino.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- seccion -->
+    <main>
+        <section class="registro">
+            <div class="registro_imagen">
+                <img src="../multimedia/vinculate.jpg">
+            </div>
+            <form class="registro_formulario">
+                <fieldset>
+                    <legend>Registrate</legend>
+                    <div>
+                        <label>Nombre y Apellido</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label>No. Documento</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label>Correo Electronico</label>
+                        <input type="email" required>
+                    </div>
+                    <div>
+                        <label>Numero Celular</label>
+                        <input type="tel" required>
+                    </div>
+                    <div>
+                        <label>Género</label>
+                        <input type="radio" name="genero">Masculino
+                        <input type="radio" name="genero">Femenino
+                    </div>
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password" required>
+                    </div>
+                    <div>
+                        <label>Fecha Nacimiento</label>
+                        <input type="date" required>
+                    </div>
+                    <div>
+                        <label>Ciudad de Residencia</label>
+                        <select>
+                            <option value="seleccione">Seleccione</option>
+                            <option value="bogota">Bogota</option>
+                            <option value="cali">Cali</option>
+                            <option value="medellin">Medellin</option>
+                            <option value="barranquilla">Barranquilla</option>
+                            <option value="neiva">Neiva</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="reset">Restablecer</button>
+                        <button type="submit"><a href="../html/iniciar_sesion.html">Enviar</a></button>
+                    </div>
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="pie_pagina">
+        <div class="pie_pagina_redes">
+            <h2>Redes Sociales</h2>
+            <a href="https://www.linkedin.com/login/es" target="_blank"><img class="redes"
+                    src="../multimedia/icono_linkedin.png"></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><img class="redes"
+                    src="../multimedia/icono_instagram.png"></a>
+            <a href="https://www.facebook.com/login/" target="_blank"><img class="redes"
+                    src="../multimedia/icono_facebook.png"></a>
+        </div>
+        <div class="pie_pagina_logo">
+            <a href="../index.html">
+                <img class="logo_header" src="../multimedia/logo_hola_vecino.png">
+            </a>
+        </div>
+        <div class="pie_pagina_contacto">
+            <h3>HolaVecino@holavecino.com</h3>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

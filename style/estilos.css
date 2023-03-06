@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;400 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Encabezado y menu de navegacion */
+.encabezado {
+    background-color: #515151;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.encabezado a {
+    background-color: #515151;
+}
+
+.logo_header {
+    width: 200px;
+    background-color: #515151;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 36px;
+    background-color: #515151;
+    flex-wrap: wrap;
+}
+
+.menu_item {
+    transform: 1s;
+}
+
+.menu_item:hover {
+    transform: scale(1.2);
+}
+
+.menu_item a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    background-color: #515151;
+}
+
+/* Seccion 1 */
+.topMasPedidos {
+    padding: 40px;
+}
+
+.topMasPedidos h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sliders {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    margin: 40px 20px 0px 20px;
+}
+
+.sliders img {
+    width: 100%;
+}
+
+
+/* seccion 2 */
+.categorias h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.card_categorias {
+    display: flex;
+    justify-content: space-between;
+    gap: 86px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card_categorias img:hover {
+    transform: translate(0px, -10px);
+}
+
+.card_categorias img {
+    width: 100%;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.card_categorias h4 {
+    text-align: center;
+}
+
+/* seccion 3 */
+
+.mapa_mercado {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "mapa mercado"
+        "mapa mercado"
+        "mapa mercado";
+    gap: 50px;
+    padding: 140px;
+    flex-wrap: wrap;
+}
+
+.mapa_mercado h3 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.mapa_mercado_1 {
+    grid-area: mapa;
+}
+
+.mapa_mercado_2 {
+    grid-area: mercado;
+}
+
+/* footer */
+.pie_pagina {
+    background-color: #515151;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2px;
+    align-items: center;
+}
+
+.pie_pagina h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.pie_pagina a {
+    text-decoration: none;
+}
+
+.redes {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.pie_pagina_contacto {
+    color: white;
+}
+
+
+/* REGISTRO.HTML  */
+
+.registro {
+    background-color: lightblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registro img {
+    width: 90%;
+}
+
+.registro_formulario {
+    margin-top: 70px;
+    margin-right: 130px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+}
+
+.registro_formulario fieldset {
+    width: 300px;
+    padding: 20px;
+}
+
+.registro_formulario button {
+    gap: 16px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.registro_formulario a {
+    text-decoration: none;
+}
+
+
+/* INICIO SESION.HTML  */
+.boton_inicio button {
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.boton_inicio a {
+    text-decoration: none;
+}
+
+/* seccion principal */
+.login {
+    width: 350px;
+    gap: 16px;
+    margin-top: 30px;
+    margin-left: 450px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.login img {
+    width: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.login button {
+    width: 80px;
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* TU RESERVA */
+.reservacion fieldset {
+    text-align: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+.reservacion_logo {
+    width: 200px;
+    margin-left: 230px;
+    margin-right: 190px;
+    margin-bottom: 40px;
+}
+
+.reservacion input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.reservacion iframe {
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.reservacion button {
+    width: 150px;
+    font-size: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 60px;
+}
+
+/* media querys*/
+
+@media screen and (max-width: 768px) {
+    .topMasPedidos h2 {
+        font-size: xx-large;
+    }
+
+    .sliders {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .categorias h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: xx-large;
+    }
+
+    .card_categorias {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .card_categorias h4 {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mapa_mercado {
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "mapa mapa"
+            "mapa mapa"
+            "mercado mercado"
+            "mercado mercado";
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .mapa_mercado h3 {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .mapa_mercado_1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mapa_mercado_2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .topMasPedidos h2 {
+        font-size: xx-large;
+    }
+
+    .sliders {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .categorias h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: xx-large;
+    }
+
+    .card_categorias {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .card_categorias h4 {
+        font-size: x-large;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .mapa_mercado {
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "mapa mapa"
+            "mapa mapa"
+            "mercado mercado"
+            "mercado mercado";
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .mapa_mercado h3 {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .mapa_mercado_1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mapa_mercado_2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* @media screen and (max-width: 375px){
+    .pie_pagina_redes{
+        flex-wrap: wrap;
+    }
+} */
