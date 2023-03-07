@@ -245,6 +245,7 @@
 }
 
 /* TU RESERVA */
+
 .reservacion fieldset {
     text-align: left;
     width: 50%;
@@ -252,18 +253,15 @@
     margin-right: auto;
     margin-bottom: 150px;
     margin-top: 150px;
+    border: 2px black solid;
+    padding: 12px;
 }
 
 .reservacion_logo {
     width: 200px;
-    margin-left: 230px;
+    margin-left: 200px;
     margin-right: 190px;
-    margin-bottom: 40px;
-}
-
-.reservacion input {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 40px; 
 }
 
 .reservacion iframe {

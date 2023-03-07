@@ -7,54 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Reserva</title>
     <link rel="stylesheet" href="../style/estilos.css">
-     <!-- Link boostrap-->
+    <!-- Link boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="../multimedia/logo_hola_vecino.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="boton_inicio">
-        <button><a href="../index.html">Inicio</a></button>
-    </header>
 
+    <header>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../multimedia/restaurante_1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/restaurante_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/restaurante_3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
     <!-- seccion principal -->
 
     <section class="reservacion">
         <fieldset>
-            <legend>Datos de tu reserva</legend>
             <div>
                 <a href="../index.html"><img class="reservacion_logo" src="../multimedia/logo_hola_vecino.png"></a>
             </div>
             <div>
-                <label>Nombre de quien reserva:</label>
-                <input type="text">
-            </div>
-            <div>
-                <label>Celular</label>
-                <input type="tel">
-            </div>
-            <div>
-                <label>Fecha de la Reserva:</label>
-                <input type="date">
-                <input type="time">
-            </div>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7953.346100847652!2d-74.1601714!3d4.652272399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1675963627514!5m2!1ses!2sco"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
+                <form class="row g-3">
+                    <div class="row g-3">
+                        <div class="col">
+                          <label>Nombre</label>
+                          <input type="text" class="form-control" placeholder="Santiago Andres" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <label>Apellido</label>
+                          <input type="text" class="form-control" placeholder="Marles Barrera" aria-label="Last name">
+                        </div>
+                      </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Carrera 93 D No. 6C - Kennedy(Tintal)">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Ciudad</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Bogota</option>
+                            <option>Medellin</option>
+                            <option>Barranquilla</option>
+                            <option>Cali</option>
+                        </select>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7953.346100847652!2d-74.1601714!3d4.652272399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1675963627514!5m2!1ses!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary"><a href="../index.html"></a>Volver a Inicio</button>
+                    </div>
+                </form>
+                <div>
+
+                </div>
         </fieldset>
     </section>
 
     <!-- parte 2 enlace boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script> 
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
