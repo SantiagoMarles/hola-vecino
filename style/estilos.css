@@ -40,7 +40,7 @@
 }
 
 .menu_item:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 .menu_item a {
@@ -84,21 +84,24 @@
 
 .card_categorias {
     display: flex;
-    justify-content: space-between;
+    justify-content: centers;
     gap: 86px;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
 .card_categorias img:hover {
-    transform: translate(0px, -10px);
+    transform: translate(0px, -12px);
 }
 
 .card_categorias img {
     width: 100%;
+    align-content: space-between;
     border-radius: 50%;
-    transition: 1s;
+    transition: 0,5s;
 }
 
 .card_categorias h4 {
@@ -109,20 +112,19 @@
 
 .mapa_mercado {
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "mapa mercado"
-        "mapa mercado"
-        "mapa mercado";
-    gap: 50px;
-    padding: 140px;
-    flex-wrap: wrap;
+        "mapa mapa mercado mercado"
+        "mapa mapa mercado mercado";
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap; 
+    justify-items: center;
 }
 
 .mapa_mercado h3 {
-    margin-top: 10px;
+    margin-top: 60px;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -139,9 +141,10 @@
 .pie_pagina {
     background-color: #515151;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 2px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pie_pagina h2 {
@@ -150,11 +153,12 @@
     margin-bottom: 12px;
 }
 
-.pie_pagina a {
+.pie_pagina_redes a{
     text-decoration: none;
 }
 
-.redes {
+.pie_pagina_redes img{
+   justify-content: center;
     border-radius: 50%;
     width: 40px;
 }
@@ -277,8 +281,8 @@
 }
 
 /* media querys*/
-
 @media screen and (max-width: 768px) {
+
     .topMasPedidos h2 {
         font-size: xx-large;
     }
@@ -290,9 +294,6 @@
         margin-right: auto;
         flex-wrap: wrap;
     }
-}
-
-@media screen and (max-width: 768px) {
 
     .categorias h2 {
         margin-top: 100px;
@@ -301,7 +302,7 @@
     }
 
     .card_categorias {
-        width: 30%;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
         flex-wrap: wrap;
@@ -309,23 +310,23 @@
     }
 
     .card_categorias h4 {
-        font-size: x-large;
+        font-size:large;
     }
-}
 
-@media screen and (max-width: 768px) {
     .mapa_mercado {
+        width: 40%;
         display: grid;
-
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "mapa mapa"
-            "mapa mapa"
-            "mercado mercado"
             "mercado mercado";
         gap: 30px;
         padding: 10px;
+        flex-wrap: wrap; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
 
     .mapa_mercado h3 {
@@ -335,17 +336,16 @@
     }
 
     .mapa_mercado_1 {
-        margin-left: auto;
-        margin-right: auto;
+        grid-area: mapa;
     }
 
     .mapa_mercado_2 {
-        margin-left: auto;
-        margin-right: auto;
+        grid-area: mercado;
     }
 }
 
 @media screen and (max-width: 375px) {
+
     .topMasPedidos h2 {
         font-size: xx-large;
     }
@@ -357,9 +357,6 @@
         margin-right: auto;
         flex-wrap: wrap;
     }
-}
-
-@media screen and (max-width: 375px) {
 
     .categorias h2 {
         margin-top: 100px;
@@ -368,7 +365,7 @@
     }
 
     .card_categorias {
-        width: 30%;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
         flex-wrap: wrap;
@@ -376,24 +373,23 @@
     }
 
     .card_categorias h4 {
-        font-size: x-large;
+        font-size:large;
     }
-}
 
-
-@media screen and (max-width: 375px) {
     .mapa_mercado {
+        width: 10%;
         display: grid;
-
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "mapa mapa"
-            "mapa mapa"
-            "mercado mercado"
             "mercado mercado";
         gap: 30px;
         padding: 10px;
+        flex-wrap: wrap; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
 
     .mapa_mercado h3 {
@@ -403,18 +399,10 @@
     }
 
     .mapa_mercado_1 {
-        margin-left: auto;
-        margin-right: auto;
+        grid-area: mapa;
     }
 
     .mapa_mercado_2 {
-        margin-left: auto;
-        margin-right: auto;
+        grid-area: mercado;
     }
 }
-
-/* @media screen and (max-width: 375px){
-    .pie_pagina_redes{
-        flex-wrap: wrap;
-    }
-} */
