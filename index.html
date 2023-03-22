@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>HolaVecino</title>
-    <link rel="stylesheet" href="./style/estilos.css">
+    <meta name="keywords" content="restaurante, agendar restaurante,comida, comida cerca, comida rica, restaurante barato, licores, cerveza">
+
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./multimedia/logo_hola_vecino.png" type="image/x-icon">
 </head>
 
@@ -16,20 +19,16 @@
         <a href="./index.html">
             <img class="logo_header" src="./multimedia/logo_hola_vecino.png">
         </a>
-
         <nav>
             <ul class="menu">
                 <li class="menu_item">
                     <a href="./html/tu_reserva.html">Tu Reserva</a>
                 </li>
                 <li class="menu_item">
-                    <a href="./html/modulo_pqr.html">Modulo PQR</a>
+                    <a href="./html/quienes_somos.html">¿Quiénes Somos?</a>
                 </li>
                 <li class="menu_item">
                     <a href="./html/registrarse.html">Registrarse</a>
-                </li>
-                <li class="menu_item">
-                    <a href="./html/iniciar_sesion.html">Iniciar Sesion</a>
                 </li>
             </ul>
         </nav>
@@ -42,13 +41,13 @@
             <h2>TOP 3 mas solicitados</h2>
             <div class="sliders">
                 <div class="slider_carne">
-                    <img src="./multimedia/carne.jpg">
+                    <img src="./multimedia/carne.jpg" alt="alimento_1">
                 </div>
                 <div class="slider_hamburguesa">
-                    <img src="./multimedia/hamburguesa.jpg">
+                    <img src="./multimedia/hamburguesa.jpg" alt="alimento_2">
                 </div>
                 <div class="slider_postre">
-                    <img src="./multimedia/postre.jpg">
+                    <img src="./multimedia/postre.jpg" alt="alimento_3">
                 </div>
             </div>
         </section>
@@ -70,26 +69,26 @@
                     <h4>Bares y licores</h4>
                 </div>
                 <div class="card_vinculate">
-                    <img src="./multimedia/vinculate.jpg">
+                    <a href="./html/registrarse.html">
+                        <img src="./multimedia/vinculate.jpg">
+                    </a>
                     <h4>Vincula tu negocio</h4>
                 </div>
             </div>
         </section>
 
         <!-- seccion 3 -->
-        <section>
-            <div class="mapa_mercado">
-                <div class="mapa_mercado_1">
-                    <h3>Restaurante mas cercano a tu ubicacion</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7953.346100847652!2d-74.1601714!3d4.652272399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1675963627514!5m2!1ses!2sco"
-                        width="450" height="460" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="mapa_mercado_2">
-                    <h3>Realiza tu mercado con campesinos Colombianos</h3>
-                    <img src="./multimedia/mercado.jpg">
-                </div>
+        <section class="mapa_mercado">
+            <div class="mapa_mercado_mapa">
+                <h3>Restaurante mas cercano a tu ubicacion</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7953.346100847652!2d-74.1601714!3d4.652272399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1675963627514!5m2!1ses!2sco"
+                    width="450" height="460" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="mapa_mercado_mercado">
+                <h3>Realiza tu mercado con campesinos Colombianos</h3>
+                <img src="./multimedia/mercado.jpg">
             </div>
         </section>
     </main>

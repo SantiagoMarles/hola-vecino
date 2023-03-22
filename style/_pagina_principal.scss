@@ -1,0 +1,157 @@
+.encabezado {
+    background-color: #515151;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .encabezado a {
+        background-color: #515151;
+    }
+}
+
+.logo_header {
+    width: 150px;
+    height: 150px;
+    background-color: $background-color_1;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 36px;
+    background-color: $background-color_1;
+    flex-wrap: wrap;
+    
+    .menu_item a {
+        text-decoration: none;
+        display: flex;
+        color: $color_1;
+        font-size: 16px;
+        background-color: $background-color_1;
+    }
+}
+
+.menu_item {
+    transform: 1s;
+
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+//Seccion 1
+.topMasPedidos {
+    padding: 40px;
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+.sliders {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    margin: 40px 20px 0px 20px;
+
+    img {
+        width: 100%;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+//seccion 2
+.card_categorias {
+    display: flex;
+    justify-content: center;
+    gap: 86px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    img {
+        width: 100%;
+        align-content: space-between;
+        border-radius: 50%;
+        transition: 0,5s;
+
+        &:hover {
+            transform: translate(0px, -12px);
+        }
+    }
+}
+
+.card_categorias h4 {
+    text-align: center;
+}
+
+//seccion 3 - mapa y mercado
+
+.mapa_mercado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "mapa mapa mercado mercado"
+        "mapa mapa mercado mercado";
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap; 
+    justify-items: center;
+
+    h3 {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.mapa_mercado_mapa {
+    grid-area: mapa;
+}
+
+.mapa_mercado_mercado {
+    grid-area: mercado;
+}
+    
+
+//Footer
+.pie_pagina {
+	background-color: $background-color_1;
+	display: flex;
+	justify-content: space-around;
+	gap: 2px;
+	align-items: center;
+	flex-wrap: wrap;
+	h2 {
+		font-size: 30px;
+		color: $color_1;
+		margin-bottom: 12px;
+	}
+}
+.pie_pagina_redes {
+	a {
+		text-decoration: none;
+	}
+	img {
+		justify-content: center;
+		border-radius: 50%;
+		width: 40px;
+	}
+}
+.pie_pagina_contacto {
+	color: $color_1;
+}

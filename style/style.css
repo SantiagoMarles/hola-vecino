@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;400 & display=swap");
+.encabezado_login, .encabezado_registrarse, .encabezado_reserva {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #515151;
+  padding: 20px;
+}
+.encabezado_login img, .encabezado_registrarse img, .encabezado_reserva img {
+  width: 150px;
+  height: 150px;
+  align-content: center;
+}
+.encabezado_login .regreso_inicio, .encabezado_registrarse .regreso_inicio, .encabezado_reserva .regreso_inicio {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 23px;
+  transition: 1s;
+  margin-right: 50px;
+}
+.encabezado_login .regreso_inicio a, .encabezado_registrarse .regreso_inicio a, .encabezado_reserva .regreso_inicio a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.encabezado_login .regreso_inicio:hover, .encabezado_registrarse .regreso_inicio:hover, .encabezado_reserva .regreso_inicio:hover {
+  transform: scale(1.2);
+}
+
+.footer_reserva, .footer_registrarse {
+  background-color: #515151;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+.footer_reserva img, .footer_registrarse img {
+  width: 100px;
+  height: 100px;
+  align-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.encabezado {
+  background-color: #515151;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.encabezado .encabezado a {
+  background-color: #515151;
+}
+
+.logo_header {
+  width: 150px;
+  height: 150px;
+  background-color: #515151;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 36px;
+  background-color: #515151;
+  flex-wrap: wrap;
+}
+.menu .menu_item a {
+  text-decoration: none;
+  display: flex;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #515151;
+}
+
+.menu_item {
+  transform: 1s;
+}
+.menu_item:hover {
+  transform: scale(1.4);
+}
+
+.topMasPedidos {
+  padding: 40px;
+}
+.topMasPedidos h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sliders {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin: 40px 20px 0px 20px;
+}
+.sliders img {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.card_categorias {
+  display: flex;
+  justify-content: center;
+  gap: 86px;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.card_categorias img {
+  width: 100%;
+  align-content: space-between;
+  border-radius: 50%;
+  transition: 0, 5s;
+}
+.card_categorias img:hover {
+  transform: translate(0px, -12px);
+}
+
+.card_categorias h4 {
+  text-align: center;
+}
+
+.mapa_mercado {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "mapa mapa mercado mercado" "mapa mapa mercado mercado";
+  gap: 30px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+.mapa_mercado h3 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.mapa_mercado_mapa {
+  grid-area: mapa;
+}
+
+.mapa_mercado_mercado {
+  grid-area: mercado;
+}
+
+.pie_pagina {
+  background-color: #515151;
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pie_pagina h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.pie_pagina_redes a {
+  text-decoration: none;
+}
+.pie_pagina_redes img {
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+}
+
+.pie_pagina_contacto {
+  color: #ffffff;
+}
+
+.encabezado_quines_s {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #515151;
+  padding: 20px;
+}
+.encabezado_quines_s img {
+  width: 150px;
+  height: 150px;
+  align-content: center;
+}
+.encabezado_quines_s .regreso_inicio {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  transition: 1s;
+  margin-right: 50px;
+}
+.encabezado_quines_s .regreso_inicio a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.encabezado_quines_s .regreso_inicio:hover {
+  transform: scale(1.2);
+}
+
+.tarjetas_peq_gigantes {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 50px;
+}
+.tarjetas_peq_gigantes img {
+  width: 100%;
+  align-content: space-between;
+  transition: 0, 5s;
+}
+.tarjetas_peq_gigantes img:hover {
+  transform: translate(0px, -12px);
+}
+
+.titulo_quienes_somos {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.somos p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
+.somos p::-moz-selection {
+  background-color: #eaea3a;
+}
+.somos p::selection {
+  background-color: #eaea3a;
+}
+
+.vision h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.vision p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
+.vision p::-moz-selection {
+  background-color: #eaea3a;
+}
+.vision p::selection {
+  background-color: #eaea3a;
+}
+
+.mision h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.mision p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 100px;
+}
+.mision p::-moz-selection {
+  background-color: #eaea3a;
+}
+.mision p::selection {
+  background-color: #eaea3a;
+}
+
+.logo_quien_s {
+  background-color: #515151;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+.logo_quien_s img {
+  width: 100px;
+  height: 100px;
+  align-content: center;
+}
+
+.slider_reserva {
+  margin: 80px 300px;
+}
+
+.reservacion {
+  background-image: url(../multimedia/fondo.jpg);
+  background-size: cover;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 20px;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 520px;
+  margin-bottom: 130px;
+}
+.reservacion img {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 180px;
+}
+.reservacion button {
+  font-size: 14px;
+  color: #000000;
+  border: 0;
+  outline: none;
+  width: 480px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: 1s;
+}
+.reservacion button:hover {
+  transform: scale(0.9);
+}
+
+.encabezado_registrarse {
+  margin-bottom: 120px;
+}
+
+.formulario {
+  background-image: url(../multimedia/fondo.jpg);
+  background-size: cover;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 20px;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 320px;
+}
+.formulario select {
+  margin-bottom: 50px;
+}
+.formulario button {
+  font-size: 14px;
+  color: #000000;
+  border: 0;
+  outline: none;
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: 1s;
+}
+.formulario button a {
+  text-decoration: none;
+  color: #000000;
+}
+.formulario button:hover {
+  transform: scale(1.1);
+}
+.formulario input {
+  border: solid 1px #ccc;
+  padding: 10px;
+  outline: none;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.footer_registrarse {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .topMasPedidos h2 {
+    font-size: xx-large;
+  }
+  .sliders {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  .categorias h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+  }
+  .card_categorias {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .card_categorias h4 {
+    font-size: large;
+  }
+  .mapa_mercado {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mapa mapa" "mercado mercado";
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .mapa_mercado h3 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  .mapa_mercado_1 {
+    grid-area: mapa;
+  }
+  .mapa_mercado_2 {
+    grid-area: mercado;
+  }
+}
+@media screen and (max-width: 375px) {
+  .topMasPedidos h2 {
+    font-size: xx-large;
+  }
+  .sliders {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  .categorias h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+  }
+  .card_categorias {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .card_categorias h4 {
+    font-size: large;
+  }
+  .mapa_mercado {
+    width: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mapa mapa" "mercado mercado";
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .mapa_mercado h3 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  .mapa_mercado_1 {
+    grid-area: mapa;
+  }
+  .mapa_mercado_2 {
+    grid-area: mercado;
+  }
+}
+.slider_reserva {
+  margin: 80px 12px;
+}
+
+.reservacion {
+  background-image: url(../multimedia/fondo.jpg);
+  background-size: cover;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 20px;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 330px;
+  margin-bottom: 130px;
+}
+.reservacion img {
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-left: 40px;
+  width: 180px;
+}
+.reservacion button {
+  font-size: 14px;
+  color: #000000;
+  border: 0;
+  outline: none;
+  width: 290px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: 1s;
+}
+.reservacion button:hover {
+  transform: scale(0.9);
+}/*# sourceMappingURL=style.css.map */

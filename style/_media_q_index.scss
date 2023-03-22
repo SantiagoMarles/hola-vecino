@@ -1,0 +1,124 @@
+@media screen and (max-width: 768px) {
+
+    .topMasPedidos h2 {
+        font-size: xx-large;
+    }
+
+    .sliders {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+
+    .categorias h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: xx-large;
+    }
+
+    .card_categorias {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .card_categorias h4 {
+        font-size:large;
+    }
+
+    .mapa_mercado {
+        width: 40%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "mapa mapa"
+            "mercado mercado";
+        gap: 30px;
+        padding: 10px;
+        flex-wrap: wrap; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .mapa_mercado h3 {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .mapa_mercado_1 {
+        grid-area: mapa;
+    }
+
+    .mapa_mercado_2 {
+        grid-area: mercado;
+    }
+}
+    
+@media screen and (max-width: 375px) {
+    .topMasPedidos h2 {
+        font-size: xx-large;
+    }
+
+    .sliders {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+
+    .categorias h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: xx-large;
+    }
+
+    .card_categorias {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .card_categorias h4 {
+        font-size:large;
+    }
+
+    .mapa_mercado {
+        width: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "mapa mapa"
+            "mercado mercado";
+        gap: 30px;
+        padding: 10px;
+        flex-wrap: wrap; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .mapa_mercado h3 {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .mapa_mercado_1 {
+        grid-area: mapa;
+    }
+
+    .mapa_mercado_2 {
+        grid-area: mercado;
+    }
+}

@@ -1,0 +1,75 @@
+$color_1: #ffffff;
+$color_2: #ccc;
+$color_3: #000000;
+$background-color_1: #515151;
+
+//extend de encabezados
+%encabezado_quines_s{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-color_1;
+    padding: 20px;
+
+    img{
+        width: 150px;
+        height: 150px;
+        align-content: center;
+    }
+
+.regreso_inicio{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 23px;
+    transition: 1s;
+    margin-right: 50px;
+
+    a{
+        color: $color_1;
+        text-decoration: none;
+    }
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.encabezado_reserva{
+    @extend %encabezado_quines_s;
+}
+
+.encabezado_registrarse{
+    @extend %encabezado_quines_s;
+}
+
+.encabezado_login{
+    @extend %encabezado_quines_s;
+}
+
+
+//extend de footer
+%logo_quien_s{
+    background-color: $background-color_1;
+    display: flex;
+
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+
+    img{
+        width: 100px;
+        height: 100px;
+        align-content: center;
+    }
+}
+
+.footer_registrarse{
+    @extend %logo_quien_s;
+}
+
+.footer_reserva{
+    @extend %logo_quien_s;
+}

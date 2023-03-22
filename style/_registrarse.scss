@@ -1,0 +1,51 @@
+.encabezado_registrarse{
+    margin-bottom: 120px;
+}
+
+.formulario{
+    background-image: url(../multimedia/fondo.jpg);
+    background-size: cover;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 20px;
+    color: $color_1;
+    margin: 0 auto;
+    width: 320px;
+
+    select{
+        margin-bottom: 50px;
+    }
+
+    button{
+        font-size: 14px;
+        color: $color_3;
+        border: 0;
+        outline: none;
+        width: 280px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        transition: 1s;
+
+        a{
+            text-decoration: none;
+            color: $color_3;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    input{
+        border: solid 1px $color_2;
+        padding: 10px;
+        outline: none;
+        width: 280px;
+        margin-bottom: 10px;
+    }
+}
+
+.footer_registrarse{
+    margin-top: 120px;
+}
