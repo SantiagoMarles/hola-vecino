@@ -2,7 +2,7 @@
     background-color: #515151;
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 10px 10px;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
@@ -13,14 +13,16 @@
 }
 
 .logo_header {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
+    margin-left: 30px;
     background-color: $background-color_1;
 }
 
 .menu {
     list-style-type: none;
     display: flex;
+    margin-right: 30px;
     gap: 36px;
     background-color: $background-color_1;
     flex-wrap: wrap;
@@ -62,6 +64,7 @@
 
     img {
         width: 100%;
+        border-radius: 3px;
     }
 }
 
@@ -94,7 +97,7 @@ h2 {
     }
 }
 
-.card_categorias h4 {
+.card_categorias_tt{
     text-align: center;
 }
 
@@ -136,22 +139,30 @@ h2 {
 	gap: 2px;
 	align-items: center;
 	flex-wrap: wrap;
+    padding: 10px;
+
 	h2 {
 		font-size: 30px;
 		color: $color_1;
-		margin-bottom: 12px;
+		margin-bottom: 5px;
+        margin-top: 10px;
 	}
 }
+
 .pie_pagina_redes {
 	a {
 		text-decoration: none;
 	}
-	img {
-		justify-content: center;
-		border-radius: 50%;
-		width: 40px;
+
+	.redes {
+        width: 40px;
+        margin: 4px;
 	}
 }
 .pie_pagina_contacto {
 	color: $color_1;
+
+    h3{
+        font-size: 15px;
+    }
 }

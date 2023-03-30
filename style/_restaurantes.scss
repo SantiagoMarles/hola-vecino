@@ -1,0 +1,71 @@
+.titulo_card_restaurantes{
+    text-align: center;
+}
+
+.card_restaurantes_2{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    margin: 50px 45px 50px 45px;
+    gap: 60px;
+
+    .card_rest{
+        box-shadow: 0 0 8px $background-color_1;
+        border-radius: 3px;
+        padding: 10px;
+        transform: 1s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        h4{
+            font-size: 18px;
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 9px;
+            margin-bottom: 15px;
+        }
+
+        h5{
+            margin-top: 5px;
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        .img_ubicacion{
+            width: 10%;
+        }
+
+        .reacciones{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .reaccion_sevicio{
+                gap: 30px;
+                width: 10%;
+                margin-top: 10px;
+                path {fill:red;}
+            }
+        } 
+
+        .telefono_card_rest{
+            width: 8%;
+            margin-top: 10px;
+        }
+
+        .nume_rest{
+            text-decoration: underline;
+            color: blue;
+        }
+    
+    }
+}

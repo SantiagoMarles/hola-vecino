@@ -1,40 +1,55 @@
 @import url("https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;400 & display=swap");
-.encabezado_login, .encabezado_registrarse, .encabezado_reserva {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.encabezado_restaurantes, .encabezado_quines_s, .encabezado_registrarse, .encabezado_reserva {
   background-color: #515151;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
-.encabezado_login img, .encabezado_registrarse img, .encabezado_reserva img {
-  width: 150px;
-  height: 150px;
-  align-content: center;
-}
-.encabezado_login .regreso_inicio, .encabezado_registrarse .regreso_inicio, .encabezado_reserva .regreso_inicio {
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 23px;
-  transition: 1s;
-  margin-right: 50px;
-}
-.encabezado_login .regreso_inicio a, .encabezado_registrarse .regreso_inicio a, .encabezado_reserva .regreso_inicio a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.encabezado_login .regreso_inicio:hover, .encabezado_registrarse .regreso_inicio:hover, .encabezado_reserva .regreso_inicio:hover {
-  transform: scale(1.2);
+.encabezado_restaurantes .encabezado a, .encabezado_quines_s .encabezado a, .encabezado_registrarse .encabezado a, .encabezado_reserva .encabezado a {
+  background-color: #515151;
 }
 
-.footer_reserva, .footer_registrarse {
+.logo_header {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+  background-color: #515151;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin-right: 30px;
+  gap: 36px;
+  background-color: #515151;
+  flex-wrap: wrap;
+}
+.menu .menu_item a {
+  text-decoration: none;
+  display: flex;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #515151;
+}
+
+.menu_item {
+  transform: 1s;
+}
+.menu_item:hover {
+  transform: scale(1.4);
+}
+
+.footer_restaurante, .footer_reserva, .footer_registrarse {
   background-color: #515151;
   display: flex;
   justify-content: center;
   padding: 10px;
   width: 100%;
 }
-.footer_reserva img, .footer_registrarse img {
+.footer_restaurante img, .footer_reserva img, .footer_registrarse img {
   width: 100px;
   height: 100px;
   align-content: center;
@@ -51,7 +66,7 @@
   background-color: #515151;
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 10px;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
@@ -61,14 +76,16 @@
 }
 
 .logo_header {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
+  margin-left: 30px;
   background-color: #515151;
 }
 
 .menu {
   list-style-type: none;
   display: flex;
+  margin-right: 30px;
   gap: 36px;
   background-color: #515151;
   flex-wrap: wrap;
@@ -106,6 +123,7 @@
 }
 .sliders img {
   width: 100%;
+  border-radius: 3px;
 }
 
 h2 {
@@ -134,7 +152,7 @@ h2 {
   transform: translate(0px, -12px);
 }
 
-.card_categorias h4 {
+.card_categorias_tt {
   text-align: center;
 }
 
@@ -169,59 +187,36 @@ h2 {
   gap: 2px;
   align-items: center;
   flex-wrap: wrap;
+  padding: 10px;
 }
 .pie_pagina h2 {
   font-size: 30px;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .pie_pagina_redes a {
   text-decoration: none;
 }
-.pie_pagina_redes img {
-  justify-content: center;
-  border-radius: 50%;
+.pie_pagina_redes .redes {
   width: 40px;
+  margin: 4px;
 }
 
 .pie_pagina_contacto {
   color: #ffffff;
 }
-
-.encabezado_quines_s {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #515151;
-  padding: 20px;
-}
-.encabezado_quines_s img {
-  width: 150px;
-  height: 150px;
-  align-content: center;
-}
-.encabezado_quines_s .regreso_inicio {
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  transition: 1s;
-  margin-right: 50px;
-}
-.encabezado_quines_s .regreso_inicio a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.encabezado_quines_s .regreso_inicio:hover {
-  transform: scale(1.2);
+.pie_pagina_contacto h3 {
+  font-size: 15px;
 }
 
 .tarjetas_peq_gigantes {
   display: flex;
+  justify-content: space-between;
+  gap: 25px;
   align-items: center;
-  gap: 30px;
-  margin: 50px;
+  margin: 40px 20px 0px 20px;
 }
 .tarjetas_peq_gigantes img {
   width: 100%;
@@ -313,7 +308,7 @@ h2 {
   padding: 20px;
   color: #ffffff;
   margin: 0 auto;
-  width: 520px;
+  width: 530px;
   margin-bottom: 130px;
 }
 .reservacion img {
@@ -334,6 +329,69 @@ h2 {
 }
 .reservacion button:hover {
   transform: scale(0.9);
+}
+
+.titulo_card_restaurantes {
+  text-align: center;
+}
+
+.card_restaurantes_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  margin: 50px 45px 50px 45px;
+  gap: 60px;
+}
+.card_restaurantes_2 .card_rest {
+  box-shadow: 0 0 8px #515151;
+  border-radius: 3px;
+  padding: 10px;
+  transform: 1s;
+}
+.card_restaurantes_2 .card_rest:hover {
+  transform: scale(1.1);
+}
+.card_restaurantes_2 .card_rest img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card_restaurantes_2 .card_rest h4 {
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 9px;
+  margin-bottom: 15px;
+}
+.card_restaurantes_2 .card_rest h5 {
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 15px;
+}
+.card_restaurantes_2 .card_rest .img_ubicacion {
+  width: 10%;
+}
+.card_restaurantes_2 .card_rest .reacciones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card_restaurantes_2 .card_rest .reacciones .reaccion_sevicio {
+  gap: 30px;
+  width: 10%;
+  margin-top: 10px;
+}
+.card_restaurantes_2 .card_rest .reacciones .reaccion_sevicio path {
+  fill: red;
+}
+.card_restaurantes_2 .card_rest .telefono_card_rest {
+  width: 8%;
+  margin-top: 10px;
+}
+.card_restaurantes_2 .card_rest .nume_rest {
+  text-decoration: underline;
+  color: blue;
 }
 
 .encabezado_registrarse {
@@ -384,15 +442,29 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .encabezado {
+    background-color: #515151;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .encabezado .encabezado a {
+    background-color: #515151;
+  }
   .topMasPedidos h2 {
     font-size: xx-large;
   }
   .sliders {
-    width: 50%;
     height: 50%;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
+  }
+  .sliders img {
+    border-radius: 3px;
   }
   .categorias h2 {
     margin-top: 100px;
@@ -434,7 +506,19 @@ h2 {
     grid-area: mercado;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 378px) {
+  .encabezado {
+    background-color: #515151;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .encabezado .encabezado a {
+    background-color: #515151;
+  }
   .topMasPedidos h2 {
     font-size: xx-large;
   }
@@ -485,6 +569,21 @@ h2 {
     grid-area: mercado;
   }
 }
+.pie_pagina {
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
+}
+.pie_pagina .pie_pagina_redes h2 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.pie_pagina .redes {
+  width: 20px;
+}
+
 .slider_reserva {
   margin: 80px 12px;
 }
@@ -511,7 +610,7 @@ h2 {
   color: #000000;
   border: 0;
   outline: none;
-  width: 290px;
+  width: 300px;
   padding: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -519,4 +618,50 @@ h2 {
 }
 .reservacion button:hover {
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .card_restaurantes_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    margin: 50px 40px 40px 50px;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 378px) {
+  .card_restaurantes_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    gap: 20px;
+    margin: 40px 10px 40px 10px;
+  }
+  .card_restaurantes_2 .card_rest .img_card_res {
+    width: 100%;
+    border-radius: 6px;
+  }
+  .card_restaurantes_2 .card_rest h4 {
+    font-size: 15px;
+  }
+  .card_restaurantes_2 .card_rest h5 {
+    font-size: 12px;
+  }
+  .card_restaurantes_2 .card_rest .telefono_card_rest {
+    width: 15px;
+  }
+  .card_restaurantes_2 .card_rest .nume_rest {
+    display: none;
+  }
+  .card_restaurantes_2 .card_rest .reacciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card_restaurantes_2 .card_rest .reacciones .reaccion_sevicio {
+    width: 15%;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

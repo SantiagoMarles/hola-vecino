@@ -1,42 +1,9 @@
-.encabezado_quines_s{
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-    background-color: $background-color_1;
-    padding: 20px;
-
-    img{
-        width: 150px;
-        height: 150px;
-        align-content: center;
-    }
-
-.regreso_inicio{
-    border: none;
-    background-color: inherit;
-    padding: 14px 28px;
-    font-size: 16px;
-    transition: 1s;
-    margin-right: 50px;
-
-    a{
-        color: $color_1;
-        text-decoration: none;
-    }
-
-        &:hover{
-            transform: scale(1.2);
-        }
-    }
-}
-
 .tarjetas_peq_gigantes{
     display: flex;
-
+    justify-content: space-between;
+    gap: 25px;
     align-items: center;
-    gap: 30px;
-    margin: 50px;
+    margin: 40px 20px 0px 20px;
 
     img{
         width: 100%;

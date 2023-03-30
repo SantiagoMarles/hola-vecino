@@ -1,15 +1,31 @@
 @media screen and (max-width: 768px) {
+    .encabezado {
+        background-color: #515151;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    
+        .encabezado a {
+            background-color: #515151;
+        }
+    }
 
     .topMasPedidos h2 {
         font-size: xx-large;
     }
 
     .sliders {
-        width: 50%;
         height: 50%;
         margin-left: auto;
         margin-right: auto;
         flex-wrap: wrap;
+
+        img{
+            border-radius: 3px;
+        }
     }
 
     .categorias h2 {
@@ -61,7 +77,21 @@
     }
 }
     
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 378px) {
+    .encabezado {
+        background-color: #515151;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    
+        .encabezado a {
+            background-color: #515151;
+        }
+    }
+    
     .topMasPedidos h2 {
         font-size: xx-large;
     }
@@ -122,3 +152,21 @@
         grid-area: mercado;
     }
 }
+
+.pie_pagina{
+    padding: 2px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 2px;
+
+    .pie_pagina_redes 
+        h2 {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .redes{
+            width: 20px;
+        }
+    }
