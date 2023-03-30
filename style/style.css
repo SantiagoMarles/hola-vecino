@@ -584,42 +584,48 @@ h2 {
   width: 20px;
 }
 
-.slider_reserva {
-  margin: 80px 12px;
+@media screen and (max-width: 768px) {
+  .slider_reserva {
+    margin: 80px 12px;
+  }
+  .reservacion {
+    background-image: url(../multimedia/fondo.jpg);
+    background-size: cover;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 20px;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 330px;
+    margin-bottom: 130px;
+  }
+  .reservacion img {
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-left: 40px;
+    width: 180px;
+  }
+  .reservacion button {
+    font-size: 14px;
+    color: #000000;
+    border: 0;
+    outline: none;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: 1s;
+  }
+  .reservacion button:hover {
+    transform: scale(0.9);
+  }
 }
-
-.reservacion {
-  background-image: url(../multimedia/fondo.jpg);
-  background-size: cover;
-  border-radius: 4px;
-  font-size: 14px;
-  padding: 20px;
-  color: #ffffff;
-  margin: 0 auto;
-  width: 330px;
-  margin-bottom: 130px;
+@media screen and (max-width: 378px) {
+  .reservacion {
+    width: 800px;
+    margin: 10px 20px 10px 20px;
+  }
 }
-.reservacion img {
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-left: 40px;
-  width: 180px;
-}
-.reservacion button {
-  font-size: 14px;
-  color: #000000;
-  border: 0;
-  outline: none;
-  width: 300px;
-  padding: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  transition: 1s;
-}
-.reservacion button:hover {
-  transform: scale(0.9);
-}
-
 @media screen and (max-width: 768px) {
   .card_restaurantes_2 {
     display: grid;
